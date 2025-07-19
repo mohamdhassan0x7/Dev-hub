@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "module": "ES2022",
+    "module": "commonjs",
     "strict": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
@@ -20,6 +20,12 @@
     "forceConsistentCasingInFileNames": true,
     "noImplicitAny": false,
     "strictBindCallApply": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@decorators/*": ["./src/auth/decorators/*"],
+      "@guards/*": ["./src/auth/guards/*"],
+      "@strategies/*": ["./src/auth/strategies/*"],
+      "@user/*": ["./src/user/*"]
+    }
   }
 }
